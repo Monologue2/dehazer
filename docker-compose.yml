@@ -2,7 +2,7 @@ version: "3"
 
 services:
   DehazerFormer:
-    image: seyoumoon/dehazerformer:1.10.0-cuda11.3-cudnn8-devel
+    image: seyoumoon/dehazeformer_env
     container_name: dehazer
     # environment:
     #   SHARE: ./share
