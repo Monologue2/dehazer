@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  DehazerFormer:
+    image: seyoumoon/dehazerformer:1.10.0-cuda11.3-cudnn8-devel
+    container_name: dehazer
+    # environment:
+    #   SHARE: ./share
+    volumes:
+      - .:/workspace
+    deploy:
+      resources:
+        reservations:
+            devices:
+              - driver: nvidia
+                count: "all"
+                capabilities: [gpu]
+    ipc: host
+    tty: true
