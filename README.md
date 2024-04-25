@@ -1,9 +1,17 @@
 # Vision Transformers for Video Dehazing : Ministry of Oceans and Fisheries
 [Vision Transformers for Single Image Dehazing](https://github.com/IDKiro/DehazeFormer)
 
+
+### Requirements
+- Nvidia Driver Version 525 >
+- Docker Version 20.10 >
+
 ### How to use
 ```
-docker exec -it dehazer python dehaze.py -i '{DehazerFormerPath}/{FilePath} -o '{Filename}'
+git clone git@github.com:Monologue2/dehazer.git
+cd dehazer
+docker compose up -d
+docker exec -it dehazer python dehaze.py -i './{FilePath} -o '{Filename}'
 ```
 - Output file path
 ```
