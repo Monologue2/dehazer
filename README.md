@@ -16,7 +16,7 @@ $ docker exec -it dehazer python dehaze.py -i './{FilePath} -o '{Filename}'
 - Output file path
 ```
 .
-├── **output**
+└── **output**
     └── **OutputFile.mp4**
 ```
 
