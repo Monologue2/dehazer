@@ -8,7 +8,7 @@
 
 ### How to use
 ```
-$ git clone git@github.com:Monologue2/dehazer.git
+$ git clone https://github.com/Monologue2/dehazer.git
 $ cd dehazer
 $ docker compose up -d
 $ docker exec -it dehazer python dehaze.py -i './{FilePath} -o '{Filename}'
