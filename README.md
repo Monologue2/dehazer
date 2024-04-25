@@ -11,7 +11,7 @@
 $ git clone https://github.com/Monologue2/dehazer.git
 $ cd dehazer
 $ docker compose up -d
-$ docker exec -it dehazer python dehaze.py -i './{FilePath} -o '{Filename}'
+$ docker exec -it dehazer python dehaze.py -i ./{FilePath} -o {Filename}
 ```
 - Output file path
 ```
